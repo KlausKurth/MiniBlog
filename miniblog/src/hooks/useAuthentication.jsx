@@ -95,16 +95,19 @@ export const useAuthentication = () => {
                 displayName: data.displayName
             })
 
+            // desabilita o loading antes do retorno de user
+            setLoading(false)
+
             // user é o objeto de usuário retornado.
             return user
 
         } catch (error) {
 
+            //Debugger
             console.log(error.message)
             console.log(typeof error.message)
         }
-
-        setLoading(false)
+        
     }
 
     // Isso previne atualização de estado em um componente que não está mais visível, evitando leaks de memória.

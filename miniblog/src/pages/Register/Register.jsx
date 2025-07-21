@@ -25,7 +25,7 @@ const Register = () => {
   const [confirmePassword, setConfirmPassword] = useState("")
   const [error, setError] = useState("")
 
-  // "error: authError" é o erro do register, como já temos "error" que trata em outro estado deste script 
+  // "error: authError" é o erro do register, como já temos "error" que trata o erro do formulário 
   // useAuthentication() é um custom hook e precisa ser executado como uma função para retornar os valores.
   //Quando você chama useAuthentication(), ela executa o hook e retorna um objeto com propriedades (funções e estados) relacionadas à autenticação do usuário.
 
@@ -132,7 +132,9 @@ const Register = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </label>
-          <button className='btn'>Cadastrar</button>
+          {/*Se nao tiver com loading exibe o botão se nao desabilita o botão*/}
+          {!loading && <button className='btn'>Cadastrar</button>}
+          {loading && <button className='btn' disable>Aguarde...</button>}
           {/* Habilitar o print do erro na interface do usúario */}
           {error && <p className='error'>{error}</p>}
         </form>
