@@ -2,7 +2,9 @@
 Este projeto eu fiz para aprimorar e fixar mais conhecimentos em React, a ideia é criar um Mini Blog onde terá um fluxo de login e autentificação e o usuario poderá fazer postagens, assim como um fluxo administrador para poder gerenciar as postagens.
 
 
-![React](https://img.shields.io/badge/React-18-blue?logo=react) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript) ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
+![React](https://img.shields.io/badge/React-18-blue?logo=react) 
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript) 
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
 
 
 
