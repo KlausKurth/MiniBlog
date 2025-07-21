@@ -57,9 +57,8 @@ Este projeto foi desenvolvido com **React + JavaScript** como parte do meu apren
    npm run dev
 
 
-2. Crie e modifique o arquvio para utilizar outro banco Firebase:
-    ```bash
-    Em breve..
+2. Adicione suas configurações do Firebase em "C:\Users\User\MiniBlog\miniblog\src\firebase\config.jsx"
+    
 
 ---
 
