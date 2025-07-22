@@ -74,9 +74,10 @@ export const useAuthentication = () => {
 
         //Evita continuar o processo se o componente já foi desmontado da tela (previne erro ou memory leak).
         checkIfIsCancelled()
-
         //Inicia carregamento
         setLoading(true)
+        //limpa erro
+        setError(null);
 
         try {
 
@@ -93,7 +94,7 @@ export const useAuthentication = () => {
             //Também é uma Promise, por isso o await.
             await updateProfile(user, {
                 displayName: data.displayName
-            })
+            });
 
             // desabilita o loading antes do retorno de user
             setLoading(false)
@@ -102,13 +103,55 @@ export const useAuthentication = () => {
             return user
 
         } catch (error) {
+            let systemErrorMessage;
+      
+            if (error.code === 'auth/email-already-in-use') {
+              systemErrorMessage = 'E-mail já cadastrado.';
+            } else if (error.code === 'auth/weak-password') {
+              systemErrorMessage = 'A senha deve ter pelo menos 6 caracteres.';
+            } else {
+              systemErrorMessage = 'Erro ao criar usuário.';
+            }
 
-            //Debugger
-            console.log(error.message)
-            console.log(typeof error.message)
+            setLoading(false);
+            setError(systemErrorMessage);
         }
         
     }
+
+    // logout - sign out
+    const logout =() => {
+        // evitar memory lick
+        checkIfIsCancelled();
+        signOut(auth);
+    }
+
+    //Login - sign - in
+    const login = async (data) => {
+        checkIfIsCancelled();
+        setLoading(true);
+        setError(null);
+      
+        try {
+          await signInWithEmailAndPassword(auth, data.email, data.password);
+          setLoading(false);
+                    
+        } catch (error) {
+            let systemErrorMessage;
+      
+            if (error.code === 'auth/user-not-found') {
+              systemErrorMessage = 'Usuário não registrado';
+            } else if (error.code === 'auth/wrong-password') {
+              systemErrorMessage = 'Senha incorreta';
+            } else {
+              systemErrorMessage = 'Erro ao fazer login';
+            }      
+          
+          setError(systemErrorMessage);
+          setLoading(false);
+
+        }
+      };
 
     // Isso previne atualização de estado em um componente que não está mais visível, evitando leaks de memória.
     useEffect(() => {
@@ -119,7 +162,9 @@ export const useAuthentication = () => {
         auth,
         createUser,
         error,
-        loading
+        loading,
+        logout,
+        login,
     };
 
 };

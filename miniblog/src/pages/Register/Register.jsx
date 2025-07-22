@@ -134,7 +134,7 @@ const Register = () => {
           </label>
           {/*Se nao tiver com loading exibe o botão se nao desabilita o botão*/}
           {!loading && <button className='btn'>Cadastrar</button>}
-          {loading && <button className='btn' disable>Aguarde...</button>}
+          {loading && <button className='btn' disabled>Aguarde...</button>}
           {/* Habilitar o print do erro na interface do usúario */}
           {error && <p className='error'>{error}</p>}
         </form>

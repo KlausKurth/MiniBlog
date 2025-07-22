@@ -28,17 +28,48 @@ Este projeto foi desenvolvido com **React + JavaScript** como parte do meu apren
 ## 📸 Capturas de Tela
 
 
-### 🖼️ Tela inicial
-![Tela inicial](./screenshots/)
+### 🖼️ Home Page
+![Tela inicial](./screenshots/home_page.png)
 
-### 🖼️ Login
-![Palavra sendo descoberta](./screenshots/)
+### 🖼️ Sign-in
+![Cadastro](./screenshots/sign-in_page.png)
 
-### 🖼️ Adicionando uma postagem
-![Fim de jogo](./screenshots/)
+### 🖼️ Error in Sign-in 1
+![Alerta confirmação de senha válida](./screenshots/error_confirm_passwd.png)
 
-### 🖼️ Gerenciamento admin
-![Fim de jogo](./screenshots/game-over.png)
+### 🖼️ Error in Sign-in 2
+![Alerta quantidade mínima de caracteres](./screenshots/error_min_characters_for_psswd.png)
+
+### 🖼️ User in Firebase
+![Usuário cadastrado do Firebase](./screenshots/user_in_firebase.png)
+
+### 🖼️ Login Page
+![Efetuando o Login](./screenshots/login_page.png)
+
+### 🖼️ About Page
+![Sobre](./screenshots/about_page.png)
+
+### 🖼️ Create Post
+![Criando um Post](./screenshots/create_post.png)
+
+### 🖼️ Post in Firebase
+![Post cadastrado no Firebase](./screenshots/post_in_firebase.png)
+
+### 🖼️ Home Page after Post
+![Após adicionar Post](./screenshots/home_after_post.png)
+
+### 🖼️ Read Post
+![Ler um Post da Home Page](./screenshots/show_post.png)
+
+### 🖼️ Dashboard Post
+![Acessar Posts do User logado](./screenshots/dashboard_read_post.png)
+
+### 🖼️ Edit Post
+![Editar um Post](./screenshots/edit_post.png)
+
+### 🖼️ Delete Post
+![Excluir um Post](./screenshots/delete_post.png)
+
 
 
 ## 🚀 Tecnologias utilizadas
