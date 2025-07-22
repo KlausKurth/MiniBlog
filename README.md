@@ -8,7 +8,7 @@ Este projeto eu fiz para aprimorar e fixar mais conhecimentos em React, a ideia 
 
 
 
-**MiniBlog** Em breve...
+**MiniBlog** É um web aplication que simula um Blog, você faz o cadastro e terá acesso para publicar e ver Posts, o registro do usúario e Post são armazenados no Firebase. A ideia desse projeto foi reforçar os conceitos e praticas com React e comunicação da api com banco dedados externo.
 
 
 Este projeto foi desenvolvido com **React + JavaScript** como parte do meu aprendizado prático para reforçar conceitos essenciais de desenvolvimento front-end com **React**.
@@ -19,10 +19,10 @@ Este projeto foi desenvolvido com **React + JavaScript** como parte do meu apren
 
 ## 🕹️ Como funciona o MiniBlog?
 
-- Em breve...
-- ...
-- ...
-- ...
+- Faça o cadastro para conseguir ver e publicar novos Posts.
+- Durante a criação do Post você pode colocar link url de imagens.
+- Após a publicação do seu Post terá acesso a Dashboard, onde podera interagir com seu Post como ver, editar e deletar.
+- Publique e gerencie seus Posts, veja Post de todos os usuários da aplicação.
 
 
 ## 📸 Capturas de Tela
