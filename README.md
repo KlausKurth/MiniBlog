@@ -4,7 +4,7 @@ Este projeto eu fiz para aprimorar e fixar mais conhecimentos em React, a ideia 
 
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript) 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
+![Status](https://img.shields.io/badge/status-projeto%20concluído-green)
 
 
 
